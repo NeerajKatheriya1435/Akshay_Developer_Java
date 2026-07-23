@@ -18,6 +18,7 @@ public class StudentManagement {
     }
 
     public Student searchStudent(int id){
+
         for(Student item:myStudents){
             if(item.getId()==id){
                 return item;
@@ -36,7 +37,7 @@ public class StudentManagement {
         return false;
     }
 
-    public boolean updateStudent(int id,String name,String course,int marks){
+    public boolean updateStudent(int id,String name,String course,double marks){
         
         Student student=searchStudent(id);
 
@@ -64,15 +65,17 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         
-        StudentManagement m1=new StudentManagement();
+        // StudentManagement m1=new StudentManagement();
 
-        Student s2=new Student(101, "Rohan", "B.Tech", 566);
-        Student s3=new Student(102, "Aman", "Diploma", 345);
-        Student s4=new Student(103, "Rakesh", "B.Tech", 576);
+        // Student s2=new Student(101, "Rohan", "B.Tech", 566);
+        // Student s3=new Student(102, "Aman", "Diploma", 345);
+        // Student s4=new Student(103, "Rakesh", "B.Tech", 576);
 
-        m1.addStudents(s2);
-        m1.addStudents(s3);
-        m1.addStudents(s4);
+        // m1.addStudents(s2);
+        // m1.addStudents(s3);
+        // m1.addStudents(s4);
+        // Student new1=m1.searchStudent(s2.getId());
+        // System.out.println(new1.getName());
 
     }
 }
